@@ -14,4 +14,7 @@ trochoidal_slot.o : trochoidal_slot.cpp
 clean:
 	rm *.o *~ trochoidal_slot
 
+test: all
+	./trochoidal_slot -w .625 -t .25 -b 1,1 -e 0,0 -f 15 -r 60 -s .020 -z -.75 -x .25
+
 
